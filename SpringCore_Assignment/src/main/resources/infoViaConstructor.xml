@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+ 
+<bean id="a" class="io.springcoreassignment1.Address">  
+<constructor-arg value="MS Dhoni street" type="String"></constructor-arg>
+<constructor-arg value="Thane" type="String"></constructor-arg>
+<constructor-arg value="maharashtra" type="String"></constructor-arg>
+<constructor-arg value="400604" type="int"></constructor-arg>
+<constructor-arg value="India" type="String"></constructor-arg>
+ </bean>
+  
+
+<bean id="c"  class="io.springcoreassignment1.Customer">  
+<constructor-arg value="1" type="int"></constructor-arg>
+<constructor-arg value="Anil" type="String"></constructor-arg>
+<constructor-arg value="8779930443" type="String"></constructor-arg>
+<constructor-arg ref = "a" ></constructor-arg>
+
+
+</bean>  
+  
+</beans>
